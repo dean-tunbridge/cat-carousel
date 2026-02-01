@@ -9,9 +9,8 @@ import cat6 from './images/cat6.jpg'
 import cat7 from './images/cat7.jpg'
 import cat8 from './images/cat8.jpg'
 import cat9 from './images/cat9.jpg'
-import cat10 from './images/cat10.jpg'
 
-const images = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10]
+const images = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9]
 
 function App() {
   return (
