@@ -5,7 +5,7 @@ function ImageSlider({ imageUrls }) {
   const [index, setIndex] = useState(0)
 
   return (
-    <div>
+    <div className="carousel-img-slider">
       <img src={imageUrls[index]} />
       <button>
         <ArrowBigLeft />

@@ -1,4 +1,5 @@
 import ImageSlider from './ImageSlider'
+import './App.css'
 
 import cat1 from './images/cat1.jpg'
 import cat2 from './images/cat2.jpg'
@@ -15,7 +16,9 @@ const images = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9]
 function App() {
   return (
     <>
-      <ImageSlider imageUrls={images} />
+      <div className="carousel-container">
+        <ImageSlider imageUrls={images} />
+      </div>
     </>
   )
 }
