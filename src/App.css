@@ -6,6 +6,13 @@
 .carousel-container {
   max-width: 1200px;
   width: 100%;
-  height: 500px;
+  aspect-ratio: 10 / 6;
   margin: 0 auto;
+}
+
+.img-slider {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
