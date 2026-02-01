@@ -10,6 +10,9 @@ function ImageSlider({ imageUrls }) {
       <button>
         <ArrowBigLeft />
       </button>
+      <button>
+        <ArrowBigRight />
+      </button>
     </div>
   )
 }
