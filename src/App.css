@@ -24,7 +24,7 @@
   height: 100%;
 }
 
-.slider-btn-left {
+.slider-btn {
   all: unset;
   display: block;
   position: absolute;
@@ -32,33 +32,21 @@
   bottom: 0;
   padding: 1rem;
   cursor: pointer;
+}
+
+.slider-btn-left {
   left: 0;
 }
 
 .slider-btn-right {
-  all: unset;
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  padding: 1rem;
-  cursor: pointer;
   right: 0;
 }
 
-.slider-btn-left:hover,
-.slider-btn-right:hover {
+.slider-btn:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.slider-btn-left > * {
-  stroke: white;
-  fill: black;
-  width: 2rem;
-  height: 2rem;
-}
-
-.slider-btn-right > * {
+.slider-btn > * {
   stroke: white;
   fill: black;
   width: 2rem;

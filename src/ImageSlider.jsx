@@ -8,10 +8,10 @@ function ImageSlider({ imageUrls }) {
   return (
     <div className="carousel">
       <img src={imageUrls[index]} className="img-slider" />
-      <button className="slider-btn-left">
+      <button className="slider-btn slider-btn-left">
         <ArrowBigLeft />
       </button>
-      <button className="slider-btn-right">
+      <button className="slider-btn slider-btn-right">
         <ArrowBigRight />
       </button>
     </div>
