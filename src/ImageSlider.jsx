@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowBigLeft, ArrowBigRight } from 'lucide-react'
+import { ArrowBigLeft, ArrowBigRight, CircleDot, Circle } from 'lucide-react'
 import './App.css'
 
 function ImageSlider({ imageUrls }) {
@@ -39,9 +39,14 @@ function ImageSlider({ imageUrls }) {
       <button className="slider-btn slider-btn-right" onClick={nextImage}>
         <ArrowBigRight />
       </button>
-      <div>
-        {imageUrls.map((_, index) => (
-          <button onClick={() => setIndex(index)}>{index}</button>
+      <div className="img-slider-dot">
+        {imageUrls.map((_, imgIndex) => (
+          <button
+            key={imgIndex}
+            className="img-slider-dot-btn"
+            onClick={() => setIndex(imgIndex)}>
+            {imgIndex === index ? <CircleDot /> : <Circle />}
+          </button>
         ))}
       </div>
     </div>
