@@ -15,8 +15,8 @@ function ImageSlider({ imageUrls }) {
 
   function nextImage() {
     setIndex((index) => {
-      if (index === index.length) {
-        return imageUrls[0]
+      if (index === imageUrls.length - 1) {
+        return 0
       } else return index + 1
     })
   }
