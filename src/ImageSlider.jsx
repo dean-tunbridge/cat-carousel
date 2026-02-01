@@ -23,7 +23,7 @@ function ImageSlider({ imageUrls }) {
 
   return (
     <div className="carousel">
-      <div className="img-map">
+      <div className="carousel-img-map">
         {imageUrls.map((url) => (
           <img
             key={url}
