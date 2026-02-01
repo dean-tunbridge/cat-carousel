@@ -53,7 +53,8 @@
   right: 0;
 }
 
-.slider-btn:hover {
+.slider-btn:hover,
+.slider-btn:focus-visible {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -64,7 +65,8 @@
   height: 2rem;
 }
 
-.slider-btn:hover > * {
+.slider-btn:hover > *,
+.slider-btn:focus-visible > * {
   animation: squish 200ms ease-in-out;
 }
 
@@ -92,7 +94,8 @@
   transition: scale 100ms ease-in-out;
 }
 
-.img-slider-dot-btn:hover {
+.img-slider-dot-btn:hover,
+.img-slider-dot-btn:focus-visible {
   scale: 1.2;
 }
 
