@@ -39,6 +39,11 @@ function ImageSlider({ imageUrls }) {
       <button className="slider-btn slider-btn-right" onClick={nextImage}>
         <ArrowBigRight />
       </button>
+      <div>
+        {imageUrls.map((_, index) => (
+          <button onClick={() => setIndex(index)}>{index}</button>
+        ))}
+      </div>
     </div>
   )
 }
