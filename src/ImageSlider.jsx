@@ -23,7 +23,16 @@ function ImageSlider({ imageUrls }) {
 
   return (
     <div className="carousel">
-      <img src={imageUrls[index]} className="img-slider" />
+      <div className="img-map">
+        {imageUrls.map((url) => (
+          <img
+            key={url}
+            src={url}
+            className="img-slider-img"
+            style={{ translate: `${-100 * index}%` }}
+          />
+        ))}
+      </div>
       <button className="slider-btn slider-btn-left" onClick={prevImage}>
         <ArrowBigLeft />
       </button>
