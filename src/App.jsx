@@ -9,12 +9,12 @@ import cat8 from './images/cat8.jpg'
 import cat9 from './images/cat9.jpg'
 import cat10 from './images/cat10.jpg'
 
-import './App.css'
+const images = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10]
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <ImageSlider imageUrls={images} />
     </>
   )
 }
