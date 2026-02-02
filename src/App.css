@@ -105,3 +105,8 @@
   height: 100%;
   width: 100;
 }
+
+.slider-btn:focus-visible,
+.img-slider-dot-btn:focus-visible {
+  outline: auto;
+}
