@@ -33,10 +33,16 @@ function ImageSlider({ imageUrls }) {
           />
         ))}
       </div>
-      <button className="slider-btn slider-btn-left" onClick={prevImage}>
+      <button
+        className="slider-btn slider-btn-left"
+        onClick={prevImage}
+        aria-label="Previous Image">
         <ArrowBigLeft />
       </button>
-      <button className="slider-btn slider-btn-right" onClick={nextImage}>
+      <button
+        className="slider-btn slider-btn-right"
+        onClick={nextImage}
+        aria-label="Previous Image">
         <ArrowBigRight />
       </button>
       <div className="img-slider-dot">
@@ -44,6 +50,7 @@ function ImageSlider({ imageUrls }) {
           <button
             key={imgIndex}
             className="img-slider-dot-btn"
+            aria-label={`ViewImage ${imgIndex}`}
             onClick={() => setIndex(imgIndex)}>
             {imgIndex === index ? <CircleDot /> : <Circle />}
           </button>
